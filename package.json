@@ -1,27 +1,33 @@
 {
-  "name": "first-node-ts-project",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/node": "^20.4.4",
-    "@typescript-eslint/eslint-plugin": "^5.62.0",
-    "eslint": "^8.45.0",
-    "eslint-config-standard-with-typescript": "^37.0.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-n": "^16.0.1",
-    "eslint-plugin-promise": "^6.1.1",
-    "typescript": "^5.1.6"
-  },
-  "dependencies": {
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^8.8.0",
-    "prettier": "^3.0.0"
-  }
+    "name": "first-node-ts-project",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "npx eslint src/**{js,ts}",
+        "prepare": "husky install",
+        "check-types": "tsc --pretty --noEmit",
+        "check-format": "prettier --check .",
+        "check-lint": "eslint . --ext ts --ext js",
+        "format": "prettier --write ."
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^20.4.4",
+        "@typescript-eslint/eslint-plugin": "^5.62.0",
+        "eslint": "^8.45.0",
+        "eslint-config-standard-with-typescript": "^37.0.0",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-n": "^16.0.1",
+        "eslint-plugin-promise": "^6.1.1",
+        "typescript": "^5.1.6"
+    },
+    "dependencies": {
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-prettier": "^8.8.0",
+        "prettier": "^3.0.0"
+    }
 }
