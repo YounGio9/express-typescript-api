@@ -6,6 +6,7 @@
     "scripts": {
         "start": "node dist/server.js",
         "dev": "tsc-watch --onSuccess \"node dist/server.js\"",
+        "build": "tsc",
         "test": "echo \"Error: no test specified\" && exit 1",
         "lint": "npx eslint './src/**/*.{js,ts}'",
         "prepare": "husky install",
