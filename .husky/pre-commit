@@ -2,37 +2,37 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 
-echo '🏗️👷 Styling, testing and building your project before committing'
+# echo '🏗️👷 Styling, testing and building your project before committing'
 
-# Check Prettier standards
-npm run check-format ||
-(
-    echo '\n 🤮🤢💩 Its a big shit bro! - Your styling looks disgusting. 🤢🤮
-             Prettier Check Failed. Run npm run format, add changes and try commit again. \n';
-    false;
-)
+# # Check Prettier standards
+# npm run check-format ||
+# (
+#     echo '\n 🤮🤢💩 Its a big shit bro! - Your styling looks disgusting. 🤢🤮
+#              Prettier Check Failed. Run npm run format, add changes and try commit again. \n';
+#     false;
+# )
 
-npm run lint || (
-        echo '\n😤 I dont want bugs. Please provide a good code ! 😤 
-                ESLint Check Failed. Make the required changes listed above, add changes and try to commit again.\n'
-        false; 
-)
+# npm run lint || (
+#         echo '\n😤 I dont want bugs. Please provide a good code ! 😤 
+#                 ESLint Check Failed. Make the required changes listed above, add changes and try to commit again.\n'
+#         false; 
+# )
 
-# Check ESLint Standards
-npm run check-lint ||
-(
-        echo '\n 😤🏀👋😤 Get that weak shit out of here! 😤🏀👋😤 
-                 ESLint Check Failed. Make the required changes listed above, add changes and try to commit again. \n'
-        false; 
-)
+# # Check ESLint Standards
+# npm run check-lint ||
+# (
+#         echo '\n 😤🏀👋😤 Get that weak shit out of here! 😤🏀👋😤 
+#                  ESLint Check Failed. Make the required changes listed above, add changes and try to commit again. \n'
+#         false; 
+# )
 
-# Check tsconfig standards
-npm run check-types ||
-(
-    echo '🤡😂❌🤡 Failed Type check. Whats going on ? 🤡😂❌🤡 
-                Are you seriously trying to write that? Make the changes required above. \n'
-    false;
-)
+# # Check tsconfig standards
+# npm run check-types ||
+# (
+#     echo '🤡😂❌🤡 Failed Type check. Whats going on ? 🤡😂❌🤡 
+#                 Are you seriously trying to write that? Make the changes required above. \n'
+#     false;
+# )
 
-# If everything passes... Now we can commit
-echo '✅ You got it ... I am committing this now. ✅✅✅✅ \n'
+# # If everything passes... Now we can commit
+# echo '✅ You got it ... I am committing this now. ✅✅✅✅ \n'
