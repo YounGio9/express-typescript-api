@@ -1,0 +1,8 @@
+. "$(dirname -- "$0")/_/husky.sh"
+
+npm run build ||
+(
+    echo '❌👷🔨❌ Better call Bob... Because your build failed ❌👷🔨❌
+            build failed: View the errors above to see why.'
+    false;
+)
