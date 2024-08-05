@@ -5,9 +5,13 @@ function validateEnv(): void {
         NODE_ENV: str({
             choices: ['development', 'production'],
         }),
-        PORT: port({ default: 8000 }),
+        PORT: port({ default: DEFAULT_ENV.PORT }),
         DATABASE_URL: str(),
     })
+}
+
+export const DEFAULT_ENV = {
+    PORT: 8000,
 }
 
 export default validateEnv
