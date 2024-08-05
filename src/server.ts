@@ -1,8 +1,9 @@
-import express, { type Application } from 'express'
+import 'module-alias/register'
+import 'dotenv/config'
+import validateEnv from '@utils/validateEnv'
+import App from './app'
 
-const app: Application = express()
+validateEnv()
 
-app.listen(8001, () => {
-    // eslint-disable-next-line no-console
-    console.log('Server started')
-})
+const app = new App([], Number(process.env.PORT))
+app.listen()
