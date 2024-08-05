@@ -10,5 +10,32 @@
         "sourceType": "module",
         "project": ["./tsconfig.json"]
     },
-    "rules": {}
+    "rules": {},
+    "overrides": [
+        {
+            "files": ["*.ts", "*.js"],
+            "rules": {
+                "import/extensions": "off",
+                "@typescript-eslint/no-invalid-void-type": "off",
+                "@typescript-eslint/no-misused-promises": "off",
+                "@typescript-eslint/no-non-null-assertion": "off",
+                "class-methods-use-this": "off",
+                "consistent-return": "off",
+                "@typescript-eslint/strict-boolean-expressions": "off"
+            }
+        }
+    ],
+    "settings": {
+        "import/resolver": {
+            "alias": {
+                "map": [
+                    ["@", "./src"],
+                    ["@utils", "./src/utils/"],
+                    ["@middleware", "./src/middleware/"],
+                    ["@resources", "./src/resources/"]
+                ],
+                "extensions": [".ts"]
+            }
+        }
+    }
 }
