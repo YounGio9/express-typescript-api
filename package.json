@@ -31,10 +31,10 @@
         "eslint-config-airbnb-base": "^15.0.0",
         "eslint-config-prettier": "^8.8.0",
         "eslint-config-standard-with-typescript": "^37.0.0",
+        "eslint-import-resolver-alias": "^1.1.2",
         "eslint-plugin-import": "^2.27.5",
         "eslint-plugin-n": "^16.0.1",
         "eslint-plugin-promise": "^6.1.1",
-        "eslint-import-resolver-alias": "^1.1.2",
         "prettier": "^3.0.0",
         "tsc-watch": "^6.0.4",
         "typescript": "^5.1.6"
@@ -50,7 +50,8 @@
         "module-alias": "^2.2.3",
         "morgan": "^1.10.0",
         "pino": "^9.3.2",
-        "pino-pretty": "^11.2.2"
+        "pino-pretty": "^11.2.2",
+        "zod": "^3.23.8"
     },
     "_moduleAliases": {
         "@resources": "dist/resources",
